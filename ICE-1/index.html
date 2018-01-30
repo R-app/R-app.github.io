@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Peter Callahan - InClass_8Jan2018</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<nav>
+		<ul>
+			<li><a href="">Link to Somewhere</a></li>
+			<li><a href="">Link back to Here</a></li>
+		</ul>
 		<!-- <a href=""> link to John's page -->
 	</nav>
-	<h1>Welcome to Arnold's Pizza Shop</h1><br>
 
-	<figure>
-		<img src="./images/resturantpicture.jpg" width="240" height="240" alt="A super fancy resturant"/>
-		<figcaption>est Detroit, 2017 </figcaption>
-	</figure>
+	<div class="centerpicture">
+		<figure>
+			<img src="./images/resturantpicture.jpg" height="240" alt="A super fancy resturant" />
+			<div class="centerpicture-text-overlay-a">
+				<p class="captionlight">est. Detroit, 2017</p>
+			</div>
+		</figure>
+	</div>
+	<h1>Welcome to Arnold's Pizza Shop</h1>
 
-		<form>
-			<p>Please enter your order details: </p><br>
-			<label for="name">Name:</label>
-			<input type="text" name="name" id = "name"><br>
-			<label for="dob">DOB:</label>
-			<input type="date" name="DOB" id = "dob"><br>
+	<form>
+		<p>Please enter your order details: </p>
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name">
+		<label for="dob">DOB:</label>
+		<input type="date" name="DOB" id="dob">
 
-			<p>Please enter your choice of snack:</p><br>
-			<ul>
-				<li><input type="radio" name="snack" value="pizza"> Pizza</li>
-	  		<li><input type="radio" name="snack" value="donut"> Donut</li>
-	  		<li><input type="radio" name="snack" value="vegan"> Vegan Stuff</li>
-			</ul>
+		<p>Please enter your choice of snack:</p>
+		<ul>
+			<li><input type="radio" name="snack" value="pizza"> Pizza</li>
+			<li><input type="radio" name="snack" value="donut"> Donut</li>
+			<li><input type="radio" name="snack" value="vegan"> Vegan Stuff</li>
+		</ul>
 
-	  	<p>Please enter your choice of drink:</p><br>
-			<ul>
-				<li><input type="radio" name="drink" value="coffee"> Coffee</li>
-	  		<li><input type="radio" name="drink" value="tea"> Tea</li>
-	  		<li><input type="radio" name="drink" value="water"> Water</li>
-			</ul>
+		<p>Please enter your choice of drink:</p>
+		<ul>
+			<li><input type="radio" name="drink" value="coffee"> Coffee</li>
+			<li><input type="radio" name="drink" value="tea"> Tea</li>
+			<li><input type="radio" name="drink" value="water"> Water</li>
+		</ul>
 
-			<button type="button">  Submit!  </button><br>
+		<button type="button">  Submit!  </button><br>
 
-			<img src="./images/Smiling_Face_Emoji_large.png" width="240" height="240" alt="Smiley Face"/>
+		<div class="centerpicture">
+			<img src="./images/Smiling_Face_Emoji_large.png" height="240" alt="Smiley Face" />
+		</div>
 
-			<p>New website coming soon!</p>
-			<img src="./images/sketch.jpg" width="240" height="240" alt="Our new store!"/>
-
-		</form>
+		<div class="centerpicture">
+			<h1>New website coming soon!</h1>
+			<img src="./images/sketch.jpg" height="240" alt="Our new store!" />
+		</div>
+	</form>
 
 </body>
 
