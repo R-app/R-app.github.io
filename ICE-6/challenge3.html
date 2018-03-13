@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 3</title>
+	<script type="text/javascript">
+		function checkForm() {
+
+			// Write a function that ensures at least one but ONLY one radio button is selected.  M
+			// ake sure the form action is not performed if either field is blank.
+			// Do not use Query Selector for this exercise (similar to getelementById)
+
+			document.getElementById('opt-straw').onclick = function() {
+				document.getElementById('opt-straw').checked = true;
+				document.getElementById('opt-blue').checked = false;
+			}
+
+			document.getElementById('opt-blue').onclick = function() {
+				document.getElementById('opt-blue').checked = true;
+				document.getElementById('opt-straw').checked = false;
+			}
+
+			var checked_buttons = document.getElementsByTagName('input');
+			for (var i = 0; i < checked_buttons.length; i++) {
+				if (checked_buttons[i].type == "radio") {
+					if (checked_buttons[i].checked) {
+						return true;
+					}
+				}
+			}
+			alert("Please make a selection")
+			return false;
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Challenge 3</h1>
+	<form action="challenge4.html" onsubmit="return checkForm();">
+		<fieldset>
+			<legend>Radio buttons and Check Boxes</legend>
+			<div>
+				What's your favorite berry?:
+				<label>
+            <input type="radio" value = "s" onclick="checkForm()" id="opt-straw"> Strawberries
+          </label>
+				<label>
+            <input type="radio" value = "b" onclick="checkForm()" id="opt-blue"> Blueberries
+        </label>
+			</div>
+		</fieldset>
+		<input type="submit" value="Pick your fruit!">
+	</form>
+</body>
+
+</html>
