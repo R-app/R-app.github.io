@@ -1,0 +1,57 @@
+.btn {
+  background-color: $mainBlue;
+  color: white;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2rem;
+      padding: 1.5rem, inherit;
+    }
+
+    @mixin atLarge {
+      font-size: 3rem;
+      padding: 2rem, inherit;
+    }
+  }
+
+.dropbtn {
+
+  display: none;
+
+  @mixin atMedium {
+    background-color: $mainBlue;
+    color: white;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 15%;
+    height: 6.2244rem;
+    z-index: 2;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+
+    &__selected {
+      background-color: red;
+    }
+  }
+
+  @mixin atLarge {
+    display: none;
+  }
+
+  }
