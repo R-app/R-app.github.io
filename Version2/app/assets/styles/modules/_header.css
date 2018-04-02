@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  padding: 1.3rem;
+  font-size: 1.5rem;
+  background-color: black;
+
+  @mixin atMedium {
+    display: inline-block;
+  }
+
+  @mixin atLarge {
+    width: 100%;
+  }
+
+  &__medium {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+      line-height: 1.5rem;
+      color: grey;
+      font-style: italic;
+      text-align: center;
+
+    @mixin atLarge {
+      text-align: left;
+      padding-left: 2rem;
+    }
+
+    }
+  }
+
+  &__content {
+    color: #FFF;
+    text-align: center;
+
+      @mixin atMedium {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        }
+
+      @mixin atLarge {
+        padding: 2rem;
+        font-size: 4rem;
+        text-align: left;
+      }
+  }
+}
