@@ -1,5 +1,6 @@
 .social-link {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   img {
     display: block;
     margin: 0 auto;
@@ -7,10 +8,18 @@
 }
 
 .footer {
+  display: block;
+  color: $mainBlue;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 2rem;
+  position: relative;
   padding-top: 2rem;
 
+  /*
   @mixin atLarge {
     position: fixed;
     bottom: 0;
   }
+  */
 }

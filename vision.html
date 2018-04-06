@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,18 +19,18 @@
   <nav class="nav">
     <button class="dropbtn">Dropdown</button>
     <ul class="nav__ul drop-content">
-      <li class="nav nav__ul__li selected"><a href="vision.html"><img class ="dropped-list" src="assets/images/telescope-icon-lrg.png"><span>Vision</span></a></li>
-      <li class="nav nav__ul__li"><a href="index.html"><img class ="dropped-list" src="assets/images/owl-icon-lrg.png"><span>Wisdom</span></a></li>
-      <li class="nav nav__ul__li"><a href="workouts.html"><img class ="dropped-list" src="assets/images/crossed-sword-icon-lrg.png"><span>Training</span></a></li>
-      <li class="nav nav__ul__li"><a href="about.html"><img class ="dropped-list" src="assets/images/aboutus.png"><span>About Us</span></a></li>
+      <li class="nav nav__ul__li selected"><a href="vision.html" tabindex="1" aria-label="Our Vision"><img class ="dropped-list" src="assets/images/telescope-icon-lrg.png" alt="Our Vision"><span>Vision</span></a></li>
+      <li class="nav nav__ul__li"><a href="index.html" tabindex="2" aria-label="Daily Wisdom"><img class ="dropped-list" src="assets/images/owl-icon-lrg.png" alt="Daily Wisdom"><span>Wisdom</span></a></li>
+      <li class="nav nav__ul__li"><a href="workouts.html" tabindex="3" aria-label="Daily Workout"><img class ="dropped-list" src="assets/images/crossed-sword-icon-lrg.png" alt="Training"><span>Training</span></a></li>
+      <li class="nav nav__ul__li"><a href="about.html" tabindex="4" aria-label="About Us"><img class ="dropped-list" src="assets/images/aboutus.png" alt="About Us"><span>About Us</span></a></li>
     </ul>
   </nav>
 
   <div class="large-background">
     <picture class="opacity__medium large-background__large-only">
-      <source srcset="assets/images/weathered-wall-lrg.jpeg 1900w" media="(min-width: 1700px)">
-      <source srcset="assets/images/weathered-wall-med.jpeg 1000w" media="(min-width: 750px)">
-      <img srcset="assets/images/weathered-wall-sm.jpeg 300w" alt="ROA logo">
+      <source srcset="assets/images/weathered-wall-lrg.jpeg 1900w" sizes="(min-width: 1700px) 100vw" media="(min-width: 1700px)">
+      <source srcset="assets/images/weathered-wall-med.jpeg 1000w" sizes="(min-width: 750px) 100vw" media="(min-width: 750px)">
+      <img src="assets/images/weathered-wall-sm.jpeg" alt="ROA logo">
     </picture>
     <div class="large-background__text-content">Welcome to<br>Relentless Offensive Attack</div>
   </div>
@@ -43,9 +43,9 @@
     <div class="grid__6a">
       <div class="wrapper__image">
         <picture>
-          <source srcset="assets/images/lonely-rock-lrg.jpeg 1900w" media="(min-width: 1200px)">
-          <source srcset="assets/images/lonely-rock-med.jpeg 1000w" media="(min-width: 500px)">
-          <img srcset="assets/images/lonely-rock-sm.jpeg 640w" alt="A single column of rock stretching into the sky">
+          <source srcset="assets/images/lonely-rock-lrg.jpeg 1900w" sizes="(min-width: 1200px) 100vw" media="(min-width: 1200px)">
+          <source srcset="assets/images/lonely-rock-med.jpeg 1000w" sizes="(min-width: 500px) 100vw" media="(min-width: 500px)">
+          <img src="assets/images/lonely-rock-sm.jpeg" alt="A single column of rock stretching into the sky">
         </picture>
       </div>
     </div>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="grid__6b">
-      <div class="quote--content quote--justify quote--light">To be clear, we do not mean “it’s all about the journey, not the destination.” There is no destination, the journey it is never over. The path is one of self mastery and it requires effort every day. Large or small, whatever you can give represents the
+      <div class="quote--content quote--justify quote--light">To be clear, we do not mean “it’s all about the journey, not the destination.” There is no destination, the journey is never over. The path is one of self mastery and it requires effort every day. Large or small, whatever you can give represents the
         total contribution made towards your dream. It is time to commit and see what is possible.<br>
       </div>
     </div>
@@ -65,8 +65,8 @@
     <div class="grid__6d">
       <div class="wrapper__image">
         <picture class="opacity__medium">
-          <source srcset="assets/images/bruce-lee-med.jpeg 1000w" media="(min-width: 1000px)">
-          <img srcset="assets/images/bruce-lee-sm.jpg" alt="A man ready for action">
+          <source srcset="assets/images/bruce-lee-med.jpeg 1000w" sizes="(min-width: 1000px) 100vw" media="(min-width: 1000px)">
+          <img src="assets/images/bruce-lee-sm.jpg" alt="Bruce lee, ready for action">
         </picture>
       </div>
     </div>
@@ -74,7 +74,7 @@
     <div class="grid__6e">
       <div class="quote--content quote--justify quote--light sequence-images">Find Balance</div>
       <div class="wrapper__image">
-          <img srcset="assets/images/balance-lrg.jpg" alt="A man ready for action">
+          <img src="assets/images/balance-lrg.jpg" alt="Balanced rocks">
       </div>
 
     </div>
@@ -82,29 +82,31 @@
     <div class="grid__6f">
       <div class="quote--content quote--justify quote--light sequence-images">Learn More</div>
       <div class="wrapper__image">
-        <img srcset="assets/images/books-lrg.jpg" alt="A man ready for action">
+        <img src="assets/images/books-lrg.jpg" alt="Many books">
       </div>
     </div>
 
     <div class="grid__6g">
       <div class="quote--content quote--justify quote--light sequence-images sequence-images__color-reverse">Plan Your Attack</div>
       <div class="wrapper__image">
-          <img srcset="assets/images/plan-lrg.jpg" alt="A man ready for action">
+          <img src="assets/images/plan-lrg.jpg" alt="Top down view of manufacturing facility">
       </div>
     </div>
 
     <div class="grid__6h">
       <div class="quote--content quote--justify quote--light sequence-images">Make Friends</div>
       <div class="wrapper__image">
-          <img srcset="assets/images/madmax-med.jpeg" alt="A man ready for action">
+          <img src="assets/images/madmax-med.jpeg" alt="Clan of road warriors in the wasteland">
       </div>
     </div>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
   </div>
-
+  <footer>
+    <p class="footer">Relentless Offensive Attack &copy; 2018</p>
+  </footer>
 </body>
 
-<footer></footer>
+
 
 </html>

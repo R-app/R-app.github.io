@@ -605,7 +605,8 @@ template {
   }
 @media (min-width: 1200px) {
 .quote--workout-author {
-      padding-right: 25rem
+      padding-right: 32rem;
+      padding-bottom: 3rem
   }
   }
 .quote--narrow {
@@ -621,9 +622,30 @@ template {
     font-size: 2rem;
     font-weight: 550;
   }
+.quote--background-image {
+    border: none;
+    border-radius: 50px;
+    width: 592px;
+    height: 520px;
+    background-image: url("../../assets/images/ROA1-med.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 .quote--light {
     text-decoration: none;
     font-weight: 100;
+  }
+.quote--t-padding {
+    padding-top: 1rem;
+
+  }
+.quote--border-bottom {
+    border-bottom: 5px black solid;
+  }
+.quote--colored {
+    color: white;
+    font-weight: 300;
+    background: #2f5572;
   }
 .quote--b-margin-small {
     margin-bottom: .5em;
@@ -898,15 +920,15 @@ call CLEARFIX after using float styling in HTML
     font-size: 1.8rem;
     color: #2f5572;
     }
-@media (min-width: 767px) {
+@media (min-width: 1200px) {
 .large-background__text-content {
       font-size: 5rem;
       font-weight: 550;
       color: black;
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-30%);
-              transform: translateY(-30%);
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
       left: 0;
       width: 100%;
       text-align: center;
@@ -919,13 +941,25 @@ call CLEARFIX after using float styling in HTML
   color: black;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   left: 0;
   width: 100%;
   text-align: center;
   line-height: 6rem;
 }
+@media (min-width: 767px) {
+.sequence-images{
+  -webkit-transform: translateY(160%);
+          transform: translateY(160%)
+}
+  }
+@media (min-width: 1200px) {
+.sequence-images{
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%)
+}
+  }
 .sequence-images__color-reverse {
     opacity: 0.8;
   }
@@ -955,20 +989,28 @@ call CLEARFIX after using float styling in HTML
   }
 .social-link {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .social-link img {
     display: block;
     margin: 0 auto;
   }
 .footer {
+  display: block;
+  color: #2f5572;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 2rem;
+  position: relative;
   padding-top: 2rem;
-}
-@media (min-width: 1200px) {
-.footer {
+
+  /*
+  @mixin atLarge {
     position: fixed;
-    bottom: 0
-}
+    bottom: 0;
   }
+  */
+}
 .grid {
   display: block;
 }
@@ -1037,13 +1079,25 @@ call CLEARFIX after using float styling in HTML
   }
 .tri-grid {
   display: block;
+
+
+
 }
+.tri-grid__text {
+    margin: 1px;
+    border: none;
+    border-radius: 10px;
+    background: #2f5572;
+    color: white;
+    margin-bottom: 5rem;
+    padding: 5px 5px 5px 5px;
+  }
 @media (min-width: 1200px) {
 .tri-grid {
     display: grid;
     grid-template-columns: repeat(3, 33%)
-}
-  }
-.tri-grid__4 {
 
+
+
+}
   }

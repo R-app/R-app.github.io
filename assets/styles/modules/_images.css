@@ -41,13 +41,13 @@
     font-size: 1.8rem;
     color: $mainBlue;
 
-    @mixin atMedium {
+    @mixin atLarge {
       font-size: 5rem;
       font-weight: 550;
       color: black;
       position: absolute;
       top: 50%;
-      transform: translateY(-30%);
+      transform: translateY(-100%);
       left: 0;
       width: 100%;
       text-align: center;
@@ -62,11 +62,20 @@
   color: black;
   position: relative;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(100%);
   left: 0;
   width: 100%;
   text-align: center;
   line-height: 6rem;
+
+  @mixin atMedium {
+  transform: translateY(160%);
+  }
+
+  @mixin atLarge {
+  transform: translateY(-60%);
+  }
+
 
   &__color-reverse {
     opacity: 0.8;

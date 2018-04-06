@@ -67,13 +67,22 @@
 .tri-grid {
   display: block;
 
+  &__text {
+    margin: 1px;
+    border: none;
+    border-radius: 10px;
+    background: $mainBlue;
+    color: white;
+    margin-bottom: 5rem;
+    padding: 5px 5px 5px 5px;
+  }
+
   @mixin atLarge {
     display: grid;
     grid-template-columns: repeat(3, 33%);
 
   }
 
-  &__4 {
 
-  }
+
 }
