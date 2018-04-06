@@ -41,23 +41,24 @@
 			text-align: center;
 		}
 	</style>
-
+	<script type="text/javascript" src="update.js">
+	</script>
 	<script type="text/javascript">
 		// From class example--- more available from posted notes from class
 
 		// .bind versus .on - .bind works with older version of jQuery, .on is modern
 
-		$(document).ready(function() {
-			$(".preview").bind('focus mouseover', function() {
-				$('#image').text($(this).attr("alt")); // in .text of #image, store attr "alt" for THIS
-				$('#image').css('backgroundImage', 'url("' + $(this).attr("src") + '")');
-			})
-
-			$(".preview").bind('focus mouseleave', function() {
-				$('#image').text("Hover over an image below"); // in .text of #image, store attr "alt" for THIS
-				$('#image').css('backgroundImage', 'url()');
-			})
-		});
+		// $(document).ready(function() {
+		// 	$(".preview").bind('focus mouseover', function() {
+		// 		$('#image').text($(this).attr("alt")); // in .text of #image, store attr "alt" for THIS
+		// 		$('#image').css('backgroundImage', 'url("' + $(this).attr("src") + '")');
+		// 	})
+		//
+		// 	$(".preview").bind('focus mouseleave', function() {
+		// 		$('#image').text("Hover over an image below"); // in .text of #image, store attr "alt" for THIS
+		// 		$('#image').css('backgroundImage', 'url()');
+		// 	})
+		// });
 		/*
 		function upDate(i) {
 			document.getElementById('image').style.backgroundImage = "url(" + i.src + "')'";

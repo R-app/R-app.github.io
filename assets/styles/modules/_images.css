@@ -1,0 +1,97 @@
+.opacity {
+  &__light {
+    opacity: 0.2;
+  }
+
+  &__medium {
+    opacity: 0.65;
+  }
+
+  &__dark {
+    opacity: 0.8;
+  }
+}
+
+.large-background {
+  z-index: 1;
+  padding: 0.5rem 0;
+  display: block;
+  margin: 0 auto;
+
+  @mixin atMedium {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+
+  &__large-only {
+    display: none;
+
+    @mixin atLarge {
+    display: block;
+    min-height: 500px;
+    }
+
+  }
+
+  &__text-content {
+
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: $mainBlue;
+
+    @mixin atMedium {
+      font-size: 5rem;
+      font-weight: 550;
+      color: black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-30%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 6rem;
+    }
+    }
+  }
+
+.sequence-images{
+  z-index: 2;
+  font-weight: 550;
+  color: black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 6rem;
+
+  &__color-reverse {
+    opacity: 0.8;
+  }
+}
+
+.people {
+  width: 200px;
+  height: 260px;
+  border-radius: 80px;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  background-color: black;
+  @mixin atMedium {
+
+  }
+
+  @mixin atLarge {
+
+
+    /*width: 35.5625rem;
+    height: 45.75rem;*/
+
+
+    /* size: 569px by 732px */
+  }
+
+
+}

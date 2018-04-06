@@ -1,0 +1,53 @@
+.row {
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -65px;
+  }
+
+  &--gutters > div {
+    padding-right: 65px;
+
+  }
+
+  &__extra-top-padding {
+
+    @mixin atLarge {
+      padding-top: 6.5rem;
+    }
+  }
+
+  &__medium-4--larger {
+    width: 37%;
+  }
+
+  &__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  &__medium-8--smaller {
+    width: 63%;
+  }
+
+  @mixin atMedium {
+    &__medium-6 {
+      /* Test aligned over picture*/
+    }
+  }
+
+  @mixin atLarge {
+  &__large-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  &__large-6 {
+    float: left;
+    width: 50%;
+  }
+}
+}
+/*
+call CLEARFIX after using float styling in HTML
+*/

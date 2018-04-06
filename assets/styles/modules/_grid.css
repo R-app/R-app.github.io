@@ -1,0 +1,79 @@
+.grid {
+  display: block;
+
+  @mixin atLarge {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 3rem;
+
+  &__6a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__6b {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__6c {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  &__6d {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  &__6e {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__6f {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  &__6g {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  &__6h {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  }
+}
+
+.tri-grid {
+  display: block;
+
+  @mixin atLarge {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
+  }
+
+  &__4 {
+
+  }
+}
