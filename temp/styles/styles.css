@@ -597,6 +597,7 @@ template {
     font-size: 1.2rem;
     text-align: right;
     padding-right: 7rem;
+    padding-bottom: 1rem;
   }
 @media (min-width: 530px) {
 .quote--workout-author {
@@ -646,6 +647,9 @@ template {
     color: white;
     font-weight: 300;
     background: #2f5572;
+  }
+.quote--last {
+    margin-bottom: 0;
   }
 .quote--b-margin-small {
     margin-bottom: .5em;
@@ -906,10 +910,13 @@ call CLEARFIX after using float styling in HTML
   }
 @media (min-width: 1200px) {
 .large-background__large-only {
-    display: block;
-    min-height: 500px
+    display: block
 
   }
+
+    .large-background__large-only img {
+      min-height: 300px;
+    }
   }
 .large-background__text-content {
 
@@ -927,8 +934,8 @@ call CLEARFIX after using float styling in HTML
       color: black;
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
+      -webkit-transform: translateY(-60%);
+              transform: translateY(-60%);
       left: 0;
       width: 100%;
       text-align: center;
@@ -941,8 +948,8 @@ call CLEARFIX after using float styling in HTML
   color: black;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(170%);
+          transform: translateY(170%);
   left: 0;
   width: 100%;
   text-align: center;
@@ -1100,4 +1107,8 @@ call CLEARFIX after using float styling in HTML
 
 
 }
+
+    .tri-grid__text {
+      min-height: 13rem;
+    }
   }

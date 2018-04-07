@@ -69,6 +69,7 @@
     font-size: 1.2rem;
     text-align: right;
     padding-right: 7rem;
+    padding-bottom: 1rem;
 
     @mixin atSmall {
       font-size: 1.875rem;
@@ -122,6 +123,10 @@
     color: white;
     font-weight: 300;
     background: $mainBlue;
+  }
+
+  &--last {
+    margin-bottom: 0;
   }
 
   &--b-margin-small {

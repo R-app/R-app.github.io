@@ -81,6 +81,9 @@
     display: grid;
     grid-template-columns: repeat(3, 33%);
 
+    &__text {
+      min-height: 13rem;
+    }
   }
 
 
