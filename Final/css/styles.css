@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.exampic {
+  border: 5px blue solid;
+  padding: 5%;
+  width: 100%;
+  display: inline-block;
+}
+
+.umsi {
+  border: 5px blue solid;
+  padding: 5%;
+  width: 100%;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*grid-column-gap: 3rem;*/
+}
