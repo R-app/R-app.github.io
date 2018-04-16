@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+  background-image: url("../images/sun-pattern.png");
+}
+
 .exampic {
   border: 5px blue solid;
   padding: 5%;

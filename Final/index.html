@@ -12,7 +12,25 @@
         <img class="exampic" src="images/examPic.JPG" alt="examPic">
         <img class="umsi" src="images/UMSI-logo.jpg" alt="Umsi logo">
       </div>
-      <button type="button" class="btn">Remove Image</button>
-      <button type="button" class="btn">Replace Image</button>
+      <button type="button" class="btn1">Remove Image</button>
+      <button type="button" class="btn2">Replace Image</button>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <script>
+      $('.btn1').click( function () {
+          $('.exampic').css('display', 'none');
+          $('.umsi').closest('div').removeClass('grid');
+          $('.umsi').css('width', '50%');
+          $('.umsi').css('display', 'block');
+          $('.umsi').css('margin', '0 auto');
+
+        });
+      $('.btn2').click( function () {
+          $('.exampic').css('display', 'inline-block');
+          $('.umsi').closest('div').addClass('grid');
+          $('.umsi').css('width', '100%');
+        });
+      </script>
   </body>
 </html>
