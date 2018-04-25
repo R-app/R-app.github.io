@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hufcut Concrete - Services</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="temp/styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="services.html">Services<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="logo">Hufcut Concrete
+        <div class="sublogo">Specializing in Stamped Concrete</div>
+      </div>
+
+      <div class="jumbotron top-padding bottom-padding">
+        <img class="card-img-top" src="assets/images/build1-med.jpg" alt="Blueprints">
+        <div class="display-4 top-padding">Design the patio of your dreams!</div>
+        <blockquote class="blockquote top-padding">
+          <p class="mb-0">Hufcut Concrete has been expertly installing, repairing, and sealing stamped concrete for over ten years.  Stamped concrete is an artful, durable way to create a beautiful patio or walkway that is totally unique to your home.</p><br>
+          <p class="mb-0">Our numerous style, pattern, and color options will allow you to design something totally unique that works with your landscaping and functional needs.  Stamped concrete can be installed and ready to enjoy in the same amount of time as plain concrete.</p><br>
+          <p class="mb-0">Hufcut Concrete utilizes Stampcrete brand dyes, hardeners,  and release agents to maximize surface detail and achieve an authentic and durable end product.  Due to its contiguous nature, a patio, driveway, or walkway constructed of stamped concrete has superior durability and lifespan to those constructed of individual stones or pavers.</p>
+        </blockquote>
+      </div>
+
+    <!-- mixitup controls -->
+        <div class="control-bar">
+          <button type="button" class="btn btn-secondary reload" data-filter="all">All</button>
+          <button type="button" class="btn btn-secondary" data-filter=".patio">Patios</button>
+          <button type="button" class="btn btn-secondary" data-filter=".pool">Pools</button>
+          <button type="button" class="btn btn-secondary" data-filter=".driveway">Driveways</button>
+        </div>
+
+        <div class="mixcontainer">
+          <img class="mix green patio" data-order="1" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix blue pool" data-order="2" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix blue pool" data-order="3" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix blue pool" data-order="4" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix grey driveway" data-order="5" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix grey driveway" data-order="6" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <img class="mix blue pool" data-order="7" src="images/shotgun-sm.jpeg" alt="Sample Mixin">
+          <div class="gap"></div>
+          <div class="gap"></div>
+          <div class="gap"></div>
+        </div>
+      </div>
+
+        </div>
+
+    <footer>
+      <p class="lead footer-tag"></p>
+    </footer>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="../node_modules/mixitup/dist/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script>
+          var containerEl = document.querySelector('.mixcontainer');
+          var mixer = mixitup(containerEl, {
+              animation: {
+                  animateResizeContainer: false // required to prevent column algorithm bug
+              }
+          });
+          // NB: See comments in stylesheet regarding fixes for chrome and safari "flickering"
+          // Downloaded from view-source:https://demos.kunkalabs.com/mixitup/grid-columns/
+      </script>
+
+      <script>
+      $('.mix').click( function () {
+        var selection = $(this).attr('data-order');
+        console.log(selection);
+        $(this).toggleClass("activemix");
+      });
+      </script>
+
+  </body>
+</html>

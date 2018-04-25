@@ -1,0 +1,25 @@
+.jumbotron {
+  margin-top: 2rem;
+  background-color: white;
+
+  &__small-padding-top {
+    padding-top: 2rem;
+  }
+}
+
+.bottom-padding {
+  padding-bottom: 1rem;
+}
+
+.blockquote-footer {
+  padding-top: 2rem;
+  text-align: right;
+}
+
+.top-padding {
+  padding-top: 1rem;
+
+  @mixin atMedium {
+    padding-top: 2rem;
+  }
+}

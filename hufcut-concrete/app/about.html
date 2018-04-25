@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <!-- Fancy Box for Image presentation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <title>Hufcut Concrete</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="services.html">Services</a>
+            <a class="nav-item nav-link active" href="about.html">About<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="logo">Hufcut Concrete
+        <div class="sublogo">Specializing in Stamped Concrete</div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="display-4">Thanks for visiting</div>
+        <blockquote class="blockquote top-padding">
+          <p class="mb-0">I started this business in 1995, and it has been a family owned business ever since.  I have over X number of years experience in the concrete business. I specialize in stamped concrete, a durable and beautiful material.  If you are considering upgrading your property and want to learn more about what my team and I can do, give me a call.</p>
+          <footer class="blockquote-footer">Steve Hufcut,<cite title="Source Title"> Owner</cite></footer>
+        </blockquote>
+        <hr class="my-4">
+
+        <div class="form-line">
+        <form action="https://postmail.invotes.com/send" method="POST" id="email_form">
+          <div class="form-group">
+            <label for="your name" class="bmd-label-floating"></label>
+            <input type="text" name="subject" class="form-control" placeholder="Name (Required)" required>
+          </div>
+          <div class="form-group">
+            <label for="email input" class="bmd-label-floating"></label>
+            <input type="email" name="reply_to" class="form-control" placeholder="Email (Required)" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="bmd-label-floating"></label>
+            <input type="tel" name="extra_phone_number" class="form-control" placeholder="(555)-867-5309 (Optional)">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail3" class="bmd-label-floating"></label>
+            <textarea class="form-control" name="text" rows="5" placeholder="Leave us a note" required></textarea>
+          </div>
+          <span class="form-group bmd-form-group"> <!-- needed to match padding for floating labels -->
+            <input type="hidden" name="access_token" value="7nmwyg3xdsmhgrozryzs8rwv" />
+            <input type="hidden" name="app/index.html" value="." />
+            <input type="hidden" name="app/index.html" value=".?err=1" />
+            <p class="lead">
+            <button type="submit" class="btn btn-primary btn-center" value="Send" id="submit_form">Contact Us</button>
+          </p>
+          </span>
+        </form>
+      </div>
+
+      </div>
+
+    <!--
+    Standard Button Items
+    <button type="button" class="btn btn-primary">Button1</button>
+    <button type="button" class="btn btn-secondary">Button2</button>
+    -->
+    </div>
+    <footer>
+      <p class="lead footer-tag"></p>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+    <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function() {
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+            }, 1);
+          });
+    </script>
+
+  </body>
+</html>

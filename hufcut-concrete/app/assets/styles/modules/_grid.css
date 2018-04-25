@@ -1,0 +1,109 @@
+.grid {
+  display: block;
+  padding-top: 1rem;
+
+  @mixin atSmall {
+    display: grid;
+    padding-top: 3rem;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+  }
+
+  @mixin atLarge {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-column-gap: 5%;
+  }
+}
+
+}
+
+.side-picture {
+  display: block;
+
+  @mixin atMedium {
+    display: inline-block;
+  }
+}
+
+.std-size {
+  max-width: 16rem;
+}
+
+.card  {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card a img {
+  width: 100%;
+}
+/* mixcontainer
+---------------------------------------------------------------------- */
+
+.mixcontainer {
+    min-height: 32rem;
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.mixcontainer:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    border-top: .5rem solid currentColor;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+    padding-top: 56.25%;
+}
+
+.mix.green {
+    color: #91e6c7;
+}
+
+.mix.pink {
+    color: #d595aa;
+}
+
+.mix.blue {
+    color: #5ecdde;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* Single Column */
+.mix, .gap {
+    width: calc(100%/1 - (((2 - 1) * 1rem) / 1));
+
+/* 2 Columns */
+@mixin atMedium {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+
+/* 3 Columns */
+@mixin atLarge {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+
+}
